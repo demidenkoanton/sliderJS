@@ -20,8 +20,8 @@
   display: -ms-flexbox;
   display: flex;
   background-color: yellow;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .slider-item {
