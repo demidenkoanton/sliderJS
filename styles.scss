@@ -1,0 +1,14 @@
+// Общие
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+
+// Слайдер
