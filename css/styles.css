@@ -12,7 +12,7 @@
 
 .slider-container {
   overflow: hidden;
-  background-color: pink;
+  background-color: black;
 }
 
 .slider-track {
@@ -36,7 +36,7 @@
   background-color: green;
 }
 
-.slider-item:nth-child(2n+3) {
+.slider-item:nth-child(3n+3) {
   background-color: blue;
 }
 

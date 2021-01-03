@@ -1,5 +1,5 @@
 let position = 0;
-const slidesToShow = 2; // Сколько слайдов показывать
+const slidesToShow = 3; // Сколько слайдов показывать
 const slidesToScroll = 2; // Сколько слайдов скролить
 const container = document.querySelector(".slider-container");
 const track = document.querySelector(".slider-track");
@@ -14,20 +14,18 @@ items.forEach((item) => {
   item.style.minWidth = `${itemWidth}px`;
 });
 
-btnNext.addEventListener("click", () => {
-  console.log("btn-next");
-  const itemsLeft =
-    itemCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
-  position -=
+btnPrev.addEventListener("click", () => {
+  const itemsLeft = Math.abs(position) / itemWidth;
+  position +=
     itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
   setPosition();
   checkBtns();
 });
 
-btnPrev.addEventListener("click", () => {
-  console.log("btn-prev");
-  const itemsLeft = Math.abs(position) / itemWidth;
-  position +=
+btnNext.addEventListener("click", () => {
+  const itemsLeft =
+    itemCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
+  position -=
     itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
   setPosition();
   checkBtns();
