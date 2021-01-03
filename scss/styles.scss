@@ -14,7 +14,7 @@
 // Слайдер
 .slider-container {
   overflow: hidden;
-  background-color: pink;
+  background-color: rgb(0, 0, 0);
 }
 
 .slider-track {
@@ -29,7 +29,7 @@
 
 .slider-item:nth-child(3n+1) {background-color: red;}
 .slider-item:nth-child(3n+2) {background-color: green;}
-.slider-item:nth-child(2n+3) {background-color: blue;}
+.slider-item:nth-child(3n+3) {background-color: blue;}
 
 .slider-buttons {
   text-align: center;
